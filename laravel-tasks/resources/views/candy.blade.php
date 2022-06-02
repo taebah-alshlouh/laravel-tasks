@@ -49,6 +49,12 @@
           <li class="nav-item">
             <a class="nav-link" href="aboutus">about us</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="signup">Sign up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login">Login</a>
+          </li>
         </ul>
       </div>
     </div>
