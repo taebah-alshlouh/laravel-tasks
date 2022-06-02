@@ -1,10 +1,8 @@
 <hr>
-       <!-- Footer -->
-       <footer class="text-center text-lg-start bg-light text-muted">
+<footer class="text-center text-lg-start bg-light text-muted">
   <!-- Section: Social media -->
   <section
-    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
-  >
+    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
     <!-- Right -->
     <div>
       <a href="" class="me-4 text-reset">

@@ -21,6 +21,9 @@ class TestController extends Controller
  public function signup(){
     return view('signup');
 }
+public function shop(){
+    return view('shop');
+}
   public function namesRender(){
       $names=array('first' => 'Taebah Bassam Shlouh' ,'secound' => 'marwa nseerat' , 'third' => 'Dua-Alsafasfeh' ,'forth' =>'Anas Allawafeh');
       return view("aboutus")->with($names);

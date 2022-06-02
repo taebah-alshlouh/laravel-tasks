@@ -25,7 +25,7 @@
     <body class="antialiased">
     <header>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white justify-content-between">
     <div class="container-fluid">
       <button
         class="navbar-toggler"
@@ -43,13 +43,20 @@
           <li class="nav-item active">
             <a class="nav-link" aria-current="page" href="home">Home</a>
           </li>
+          <li class="nav-item active">
+            <a class="nav-link" aria-current="page" href="shop">Shop</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="contactus">contact us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="aboutus">about us</a>
           </li>
-          <li class="nav-item">
+          </ul>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarExample01">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
             <a class="nav-link" href="signup">Sign up</a>
           </li>
           <li class="nav-item">

@@ -18,12 +18,6 @@ use App\Http\Controllers\TestController;
 // Route::get('/{name?}/{id?}', function ($name = 'null',$id = null) {
 //     return "Helloo ".$name." your id is ".$id;
 // });
-// ROUTE::get('/home',function(){
-//    return view('candy');
-// });
-// ROUTE::get('/contactus',function(){
-//     return view('contactus');
-//  });
  ROUTE::get('/aboutus',function(){
     return view('aboutus');
  });
@@ -39,6 +33,7 @@ use App\Http\Controllers\TestController;
  Route::get('/login', [TestController::class,'login']);
  Route::get('/contactus', [TestController::class,'contact']);
  Route::get('/aboutus', [TestController::class,'namesRender']);
+ Route::get('/shop', [TestController::class,'shop']);
 
 Route::get('/id/{id}', [SourceController::class,'id'])->where('id', '[0-9]+');
 Route::get('/name/{name}', [SourceController::class,'name'])-> where('name', '[A-z]+');
