@@ -14,10 +14,10 @@ class CreateCandyTable extends Migration
     public function up()
     {
         Schema::create('candy', function (Blueprint $table) {
-            $table->id();
-            $table->candyName();
-            $table->candyPrice();
-            $table->candyQuanttity();
+            $table->increments('item_id');
+            $table->string('candy_name');
+            $table->double('candy_price');
+            $table->integer('candy_quantity');
             $table->timestamps();
         });
     }

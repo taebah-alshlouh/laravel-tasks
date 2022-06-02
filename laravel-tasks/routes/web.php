@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SourceController;
+use App\Http\Controllers\TestController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,23 +13,17 @@ use App\Http\Controllers\SourceController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-// Required Parameters:
-// Route::get('/{name}/{id}', function ($name,$id) {
-//     return "Hellooooooooooooo ".$name." your id is ".$id;
-// });
-
 // Optional Parameters:
 
 // Route::get('/{name?}/{id?}', function ($name = 'null',$id = null) {
 //     return "Helloo ".$name." your id is ".$id;
 // });
-Route::view('/welcome', 'welcome');
-ROUTE::get('/home',function(){
-   return view('candy');
-});
-ROUTE::get('/contactus',function(){
-    return view('contactus');
- });
+// ROUTE::get('/home',function(){
+//    return view('candy');
+// });
+// ROUTE::get('/contactus',function(){
+//     return view('contactus');
+//  });
  ROUTE::get('/aboutus',function(){
     return view('aboutus');
  });
@@ -38,6 +33,12 @@ ROUTE::get('/contactus',function(){
  ROUTE::get('/signup',function(){
     return view('signup');
  });
+ Route::get('/home', [TestController::class,'home']);
+ Route::get('/signup', [TestController::class,'signup']);
+ Route::get('/aboutus', [TestController::class,'about']);
+ Route::get('/login', [TestController::class,'login']);
+ Route::get('/contactus', [TestController::class,'contact']);
+ Route::get('/aboutus', [TestController::class,'namesRender']);
 
- Route::get('/id/{id}', [SourceController::class,'id'])->where('id', '[0-9]+');
+Route::get('/id/{id}', [SourceController::class,'id'])->where('id', '[0-9]+');
 Route::get('/name/{name}', [SourceController::class,'name'])-> where('name', '[A-z]+');
