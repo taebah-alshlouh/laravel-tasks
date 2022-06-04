@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SourceController;
 use App\Http\Controllers\TestController;
+use App\Http\Controllers\productsViewController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -34,6 +36,7 @@ use App\Http\Controllers\TestController;
  Route::get('/contactus', [TestController::class,'contact']);
  Route::get('/aboutus', [TestController::class,'namesRender']);
  Route::get('/shop', [TestController::class,'shop']);
+ Route::get('/shop', [productsViewController::class,'productsRender']);
 
 Route::get('/id/{id}', [SourceController::class,'id'])->where('id', '[0-9]+');
 Route::get('/name/{name}', [SourceController::class,'name'])-> where('name', '[A-z]+');

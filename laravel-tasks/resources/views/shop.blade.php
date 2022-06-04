@@ -17,4 +17,26 @@
   </div>
 </nav>
 </div>
+</div>
+<br>
+<div class="container">
+<div class="row">
+@foreach ($candy as $sweets)
+<div class="col-sm-3">
+  <div class="card" style="width: 20rem;">
+    <img src="{{ $sweets->img }}" class="card-img-top" alt="chocolate">
+    <div class="card-body">
+    <h5 class="card-title">{{ $sweets->candy_name }}</h5>
+    <span>Price: ${{ $sweets->candy_price }} </span> <br>
+     <a href="#" class="btn btn-danger">BUY</a>
+  </div>
+</div>
+</div>
+<br>
+<br>
+@endforeach
+
+</div>
+</div>
+
 @endsection

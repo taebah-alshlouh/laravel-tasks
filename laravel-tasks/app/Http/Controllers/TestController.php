@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 
 class TestController extends Controller
@@ -15,17 +14,17 @@ class TestController extends Controller
     public function contact(){
         return view('contactus');
         }
-  public function login(){
+     public function login(){
      return view('login');
- }
- public function signup(){
+       }
+    public function signup(){
     return view('signup');
-}
-public function shop(){
+   }
+    public function shop(){
     return view('shop');
-}
+    }
   public function namesRender(){
       $names=array('first' => 'Taebah Bassam Shlouh' ,'secound' => 'marwa nseerat' , 'third' => 'Dua-Alsafasfeh' ,'forth' =>'Anas Allawafeh');
       return view("aboutus")->with($names);
-  }
+    }
 }
